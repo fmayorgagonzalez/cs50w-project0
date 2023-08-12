@@ -1,3 +1,4 @@
+@import url(/cs50w-project0/static/_media-screens.scss);
 .contenedor {
   width: 100%;
   max-width: 800px;
@@ -15,21 +16,6 @@
   max-width: 100%;
 }
 
-@media (min-width: 768px) {
-  p {
-    margin-left: -60px;
-  }
-}
-@media (max-width: 768px) {
-  .texto-imagen {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  .texto-imagen img {
-    margin-left: 0;
-    margin-top: 10px;
-  }
-}
 p,
 a {
   font-family: cursive;
@@ -41,7 +27,6 @@ a {
   margin-top: 20px;
   margin-bottom: 20px;
 }
-
 .social-icons a {
   margin: 0 10px;
   display: inline-block;
@@ -85,7 +70,6 @@ header nav ul {
   justify-content: space-between;
   margin-bottom: -4px;
 }
-
 header nav ul li a {
   display: flex;
   align-items: center;
@@ -99,7 +83,6 @@ header nav ul li a {
   font-weight: bold;
   font-size: 17px;
 }
-
 header nav ul li a:hover {
   border-bottom-color: #3ca2f5;
   color: #3ca2f5;
@@ -137,6 +120,31 @@ header .hamburger div {
   margin: 5px 0;
   background: black;
   margin-right: 16px;
+}
+
+.imagenestandar {
+  max-height: 520px !important;
+  height: auto !important;
+}
+
+table tbody tr th a {
+  text-decoration: none;
+  font-size: 16px;
+  color: #0f0c0c;
+}
+
+table tbody tr th a:hover {
+  color: #3ca2f5;
+}
+
+#palabra {
+  color: #3ca2f5;
+  -webkit-text-decoration: underline rgba(0, 0, 0, 0.7607843137);
+          text-decoration: underline rgba(0, 0, 0, 0.7607843137);
+}
+
+#signo {
+  color: rgba(0, 0, 0, 0.7607843137);
 }
 
 @media only screen and (max-width: 900px) {
@@ -187,27 +195,21 @@ header .hamburger div {
     font-size: 17px;
   }
 }
-.imagenestandar {
-  max-height: 520px !important;
-  height: auto !important;
+@media (max-width: 768px) {
+  .texto-imagen {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .texto-imagen img {
+    margin-left: 0;
+    margin-top: 10px;
+  }
 }
-
-table tbody tr th a {
-  text-decoration: none;
-  font-size: 16px;
-  color: #0f0c0c;
+@media (min-width: 768px) {
+  p {
+    margin-left: -60px;
+  }
 }
-
-table tbody tr th a:hover {
+.resaltar, h1 .span, p .span {
   color: #3ca2f5;
-}
-
-#palabra {
-  color: #3ca2f5;
-  -webkit-text-decoration: underline rgba(0, 0, 0, 0.7607843137);
-          text-decoration: underline rgba(0, 0, 0, 0.7607843137);
-}
-
-#signo {
-  color: rgba(0, 0, 0, 0.7607843137);
 }/*# sourceMappingURL=styles.css.map */
